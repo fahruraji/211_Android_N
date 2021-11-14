@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/tasbih"
+    android:orientation="vertical"
+    tools:context=".TasbihActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/targetEditText"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/set_target"
+            android:autofillHints="number"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ulang"
+            android:drawableLeft="@drawable/ic_baseline_settings_backup_restore_24"
+            android:backgroundTint="@color/danger" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="250sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/counterButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/tap"
+        android:textSize="40sp"
+        android:textColor="#ffff"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="?android:attr/selectableItemBackground"/>
+
+
+</LinearLayout>

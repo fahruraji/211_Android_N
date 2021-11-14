@@ -1,11 +1,15 @@
 package com.fahruraji.a211androidn
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import android.view.View
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val simpanButton = findViewById<Button>(R.id.simpanButton)
         val batalButton = findViewById<Button>(R.id.batalButton)
+        val tasbihButton = findViewById<Button>(R.id.tasbihButton)
         val logoutButton = findViewById<Button>(R.id.logoutButton)
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
@@ -41,9 +46,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         batalButton.setOnClickListener {
-            var angka = nomorEditText.text.toString().trim().toInt()
-            angka ++
-            nomorEditText.setText(angka.toString())
+//            var angka = nomorEditText.text.toString().trim().toInt()
+//            angka ++
+//            nomorEditText.setText(angka.toString())
+
+            val editText = listOf(namaEditText, emailEditText, phoneEditText, tanggalEditText, nomorEditText)
+            editText.forEach {
+                it.setText("")
+            }
+        }
+
+        tasbihButton.setOnClickListener {
+
+            val intent = Intent(this,TasbihActivity::class.java)
+            startActivity(intent)
         }
 
         logoutButton.setOnClickListener {

@@ -11,15 +11,19 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:src="@mipmap/logo"
+        android:src="@mipmap/twh"
+        android:contentDescription="@string/logo"
         android:layout_marginBottom="8dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplikasi Praktikum"
+        android:text="@string/judul"
+        android:fontFamily="serif-monospace"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#2196F3"
         />
+
 </LinearLayout>

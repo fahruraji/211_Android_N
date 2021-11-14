@@ -17,5 +17,12 @@
     <string name="isi_username_email">Isi username/email</string>
     <string name="password">Password</string>
     <string name="keluar">Keluar</string>
-    <string name="logout">logout</string>
+    <string name="logout">Logout Aja Deh!</string>
+    <string name="tasbih">Baca Tasbih Dulu</string>
+    <string name="judul">Praktikum Android N 211</string>
+    <string name="logo">logo</string>
+    <string name="set_target">Set target</string>
+    <string name="ulang">Ulang</string>
+    <string name="zero">0</string>
+    <string name="tap">Tap</string>
 </resources>
