@@ -8,4 +8,9 @@
     <string name="isi_angka">Isi Angka</string>
     <string name="simpan">Simpan</string>
     <string name="batal">Batal</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="no_handphone">No Handphone</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="angka">Angka</string>
 </resources>
