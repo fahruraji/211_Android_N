@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val simpanButton = findViewById<Button>(R.id.simpanButton)
         val batalButton = findViewById<Button>(R.id.batalButton)
+        val logoutButton = findViewById<Button>(R.id.logoutButton)
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
         val phoneEditText = findViewById<EditText>(R.id.phoneEditText)
@@ -43,6 +44,18 @@ class MainActivity : AppCompatActivity() {
             var angka = nomorEditText.text.toString().trim().toInt()
             angka ++
             nomorEditText.setText(angka.toString())
+        }
+
+        logoutButton.setOnClickListener {
+            val sharedPref = this.getSharedPreferences("MY_SHARED_PREFERENCES",MODE_PRIVATE)
+            with(sharedPref.edit()) {
+                putString("username", "")
+                putString("password", "")
+                apply()
+            }
+
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }

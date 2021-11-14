@@ -13,4 +13,9 @@
     <string name="no_handphone">No Handphone</string>
     <string name="tanggal">Tanggal</string>
     <string name="angka">Angka</string>
+    <string name="login">LOGIN</string>
+    <string name="isi_username_email">Isi username/email</string>
+    <string name="password">Password</string>
+    <string name="keluar">Keluar</string>
+    <string name="logout">logout</string>
 </resources>
